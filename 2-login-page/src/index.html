@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="flex h-screen w-screen items-center">
+    <div class="hidden h-full flex-1 bg-secondary lg:block">
+      <img
+        src="./assets/onboarding-bg.svg"
+        alt="Ilustração de onboarding"
+        class="h-full"
+      />
+    </div>
+
+    <div class="flex flex-1 items-center justify-center">
+      <div class="w-[80%] space-y-14 sm:w-[65%]">
+        <!-- títulos do formulário -->
+        <div class="space-y-2.5">
+          <div class="text-3xl">👋</div>
+          <h1 class="text-3xl font-bold text-cta-primary">
+            Bem-vindo de volta!
+          </h1>
+          <div class="">Faça seu login para acessar sua conta!</div>
+        </div>
+        <!-- Area do formulario -->
+        <div class="space-y-7">
+          <!-- input de email -->
+          <div class="space-y-2">
+            <label
+              for="email"
+              class="block text-sm font-medium text-cta-secondary"
+              >E-mail
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="block w-full rounded-md border-2 border-transparent bg-tertiary px-6 py-3 text-sm font-semibold text-cta-secondary/70 outline-none duration-300 placeholder:font-normal focus:border-primary focus:text-primary"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <!-- input de senha -->
+          <!-- input de email -->
+          <div class="space-y-2">
+            <label
+              for="password"
+              class="block text-sm font-medium text-cta-secondary"
+              >Senha
+            </label>
+            <input
+              type="password"
+              id="password"
+              class="block w-full rounded-md border-2 border-transparent bg-tertiary px-6 py-3 text-sm font-semibold text-cta-secondary/70 outline-none duration-300 placeholder:font-normal focus:border-primary focus:text-primary"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <div class="flex flex-col items-center justify-center space-y-4">
+            <button
+              class="w-full rounded-lg bg-primary py-3 text-lg font-medium text-white duration-300 hover:bg-primary/80"
+            >
+              Entrar
+            </button>
+            <div class="flex gap-1 text-[16px] font-medium">
+              <div class="truncate">Ainda não tem conta?</div>
+              <span class="text-cta-tertiary">Cadastre-se</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
